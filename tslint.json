@@ -2,6 +2,26 @@
     "defaultSeverity": "error",
     "extends": "tslint:recommended",
     "jsRules": {},
-    "rules": {},
+    "rules": {
+      "quotemark": [true, "single", "jsx-single", "avoid-escape", "avoid-template"],
+      "object-literal-key-quotes": [true, "as-needed"],
+      "interface-name": false,
+      "object-literal-sort-keys": false,
+      "semicolon": [true, "never"],
+      "import": false,
+      "no-shadowed-variable": [
+        true,
+        {
+          "class": true,
+          "enum": true,
+          "function": false,
+          "import": false,
+          "interface": true,
+          "namespace": true,
+          "typeAlias": true,
+          "typeParameter": true
+        }
+      ]
+    },
     "rulesDirectory": []
 }
